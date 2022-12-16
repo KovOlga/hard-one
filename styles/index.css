@@ -1,0 +1,47 @@
+.body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.page {
+  font-family: "Inter", Arial, sans-serif;
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-style: normal;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.icon-test {
+  background-image: url();
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.example2__logo {
+  width: 100px;
+}
+.example2__logo:hover {
+  color: gray;
+}
+@media (min-width: 500px) {
+  .example2__logo {
+    width: 200px;
+  }
+}
+
+.example1 {
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  .example1 {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=index.css.map */

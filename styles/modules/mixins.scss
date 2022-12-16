@@ -1,0 +1,14 @@
+@mixin icon-image($name, $width, $height){
+.icon-#{$name}{
+    background-image: url();
+    background-size: cover;
+    width: $width;
+    height: $height;
+}
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
