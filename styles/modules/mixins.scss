@@ -1,14 +1,18 @@
-@mixin icon-image($name, $width, $height){
-.icon-#{$name}{
-    background-image: url();
-    background-size: cover;
-    width: $width;
-    height: $height;
+@mixin icon-image($name, $width, $height) {
+	.icon-#{$name} {
+		background-image: url();
+		background-size: cover;
+		width: $width;
+		height: $height;
+	}
 }
+
+@mixin mainPadLeft {
+	padding-left: 120px;
 }
 
 @mixin desktop {
-    @media (min-width: 1024px) {
-        @content;
-    }
+	@media (min-width: 1024px) {
+		@content;
+	}
 }

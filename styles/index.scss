@@ -12,12 +12,124 @@
 	flex-direction: row;
 	gap: 34px;
 	justify-content: flex-end;
+	background-color: $backColorPrimaryLight;
 }
 
 .header__nav-link {
 	text-decoration: none;
 }
 
+// content
+
+.content {
+	@include mainPadLeft;
+	background-color: $backColorPrimaryLight;
+}
+
+// footer
+
+.footer {
+	@include mainPadLeft;
+	background-color: $backColorSecondaryLight;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	box-sizing: border-box;
+	padding-right: 120px;
+}
+
+.footer__subscription-form {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.footer__subscription-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0;
+	padding: 0;
+}
+.footer__subscription-email {
+	width: 360px;
+	border: 1px solid rgba(199, 199, 199, 0.5);
+	border-radius: 4px;
+	background: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 11px 20px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 28px;
+}
+
+.footer__copyright-mode-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer__copyright {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #cfcfcf;
+}
+
+// footer
+
+.footer__mode {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 22px;
+}
+
+.footer__mode-icon {
+	display: block;
+}
+
+// toggle
+.theme-mode {
+	position: relative;
+}
+.switch {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(0 0 0 0);
+}
+
+.switch:checked + .slider {
+	background-color: #545454;
+}
+.slider {
+	display: block;
+	width: 44px;
+	height: 24px;
+	transition: all 0.4s linear;
+	background-color: #ffffff;
+	border-radius: 50px;
+}
+
+.slider::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background: #24b47e;
+	border-radius: 50%;
+	width: 20px;
+	aspect-ratio: 1;
+}
+
+.switch:checked + .slider::before {
+	transform: translateX(20px);
+}
+
+// toggle
 @include icon-image("test", 100px, 100px);
 
 .example {
