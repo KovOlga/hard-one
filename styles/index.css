@@ -1,12 +1,14 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts.css";
 .body {
   margin: 0;
-  background-color: #000000;
+  background-color: #f4f4f4;
 }
 
 .page {
   font-family: "Inter", Arial, sans-serif;
   min-width: 320px;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   font-style: normal;
   box-sizing: border-box;
@@ -18,6 +20,18 @@
   text-rendering: optimizeLegibility;
 }
 
+.header__nav-links {
+  padding: 28px 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  justify-content: flex-end;
+}
+
+.header__nav-link {
+  text-decoration: none;
+}
+
 .icon-test {
   background-image: url();
   background-size: cover;
@@ -25,14 +39,14 @@
   height: 100px;
 }
 
-.example2__logo {
+.example__logo {
   width: 100px;
 }
-.example2__logo:hover {
+.example__logo:hover {
   color: gray;
 }
 @media (min-width: 500px) {
-  .example2__logo {
+  .example__logo {
     width: 200px;
   }
 }

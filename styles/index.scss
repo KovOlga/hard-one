@@ -1,14 +1,26 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts.css";
 @import "./modules/variables.scss";
 @import "./modules/mixins.scss";
 
 @import "./modules/blocks/body/body";
 @import "./modules/blocks/page/page";
 
-////////////////
-///
+.header__nav-links {
+	padding: 28px 120px;
+	display: flex;
+	flex-direction: row;
+	gap: 34px;
+	justify-content: flex-end;
+}
+
+.header__nav-link {
+	text-decoration: none;
+}
+
 @include icon-image("test", 100px, 100px);
 
-.example2 {
+.example {
 	&__logo {
 		width: 100px;
 
