@@ -1,8 +1,23 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts.css";
+:root {
+  --clr-body: #f4f4f4;
+  --clr-footer: #efefef;
+  --clr-text-main: #151515;
+  --clr-text-gray: #222222;
+  --clr-text-copyright: #cfcfcf;
+}
+
+.darkMode {
+  --clr-body: #333333;
+  --clr-footer: #2f2f2f;
+  --clr-text-main: #ffffff;
+  --clr-text-gray: #e6e6e6;
+  --clr-text-copyright: #565656;
+}
+
 .body {
   margin: 0;
-  background-color: #f4f4f4;
 }
 
 .page {
@@ -19,7 +34,10 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   outline: green solid 1px;
-  color: #151515;
+}
+
+.header {
+  background-color: var(--clr-body);
 }
 
 .header__nav-links {
@@ -28,7 +46,6 @@
   flex-direction: row;
   gap: 34px;
   justify-content: flex-end;
-  background-color: #f4f4f4;
 }
 
 .header__nav-link {
@@ -37,12 +54,12 @@
 
 .content {
   padding-left: 120px;
-  background-color: #f4f4f4;
+  background-color: var(--clr-body);
 }
 
 .footer {
   padding-left: 120px;
-  background-color: #efefef;
+  background-color: var(--clr-footer);
   display: flex;
   flex-direction: column;
   gap: 80px;

@@ -6,13 +6,18 @@
 @import "./modules/blocks/body/body";
 @import "./modules/blocks/page/page";
 
+// header
+
+.header {
+	background-color: var(--clr-body);
+}
+
 .header__nav-links {
 	padding: 28px 120px;
 	display: flex;
 	flex-direction: row;
 	gap: 34px;
 	justify-content: flex-end;
-	background-color: $backColorPrimaryLight;
 }
 
 .header__nav-link {
@@ -23,14 +28,14 @@
 
 .content {
 	@include mainPadLeft;
-	background-color: $backColorPrimaryLight;
+	background-color: var(--clr-body);
 }
 
 // footer
 
 .footer {
 	@include mainPadLeft;
-	background-color: $backColorSecondaryLight;
+	background-color: var(--clr-footer);
 	display: flex;
 	flex-direction: column;
 	gap: 80px;

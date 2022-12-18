@@ -1,3 +1,10 @@
+@mixin flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
 @mixin icon-image($name, $width, $height) {
 	.icon-#{$name} {
 		background-image: url();

@@ -1,14 +1,19 @@
 $fontFamily: "Inter", Arial, sans-serif;
 
-$textBlack: #151515;
-$textWhite: #ffffff;
-
-$backColorPrimaryLight: #f4f4f4;
-$backColorSecondaryLight: #efefef;
-
-$backColorPrimaryDark: #333333;
-$backColorSecondaryDark: #2f2f2f;
-
 $btnColor: #24b47e;
 
-$titleColor: #151515;
+:root {
+	--clr-body: #f4f4f4;
+	--clr-footer: #efefef;
+	--clr-text-main: #151515;
+	--clr-text-gray: #222222;
+	--clr-text-copyright: #cfcfcf;
+}
+
+.darkMode {
+	--clr-body: #333333;
+	--clr-footer: #2f2f2f;
+	--clr-text-main: #ffffff;
+	--clr-text-gray: #e6e6e6;
+	--clr-text-copyright: #565656;
+}
