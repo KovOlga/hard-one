@@ -36,7 +36,22 @@
 
 .intro {
 	display: grid;
-	grid-template-columns: ;
+	grid-template-columns: minmax(250px, 460px) minmax(10px, 250px) minmax(
+			400px,
+			610px
+		);
+	grid-template-rows: 20px 60px auto 50px auto 50px auto 167px auto 209px;
+	grid-template-areas:
+		". . ."
+		". . img"
+		"title . img"
+		". . img"
+		"text . img"
+		". . img"
+		"link . img"
+		". . img"
+		"bicycle-name-line . img"
+		". . img";
 }
 
 .intro__title {
@@ -78,6 +93,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 30px;
 	grid-area: bicycle-name-line;
 }
@@ -100,6 +116,8 @@
 	display: block;
 	height: 0;
 	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
 	grid-area: img;
 }
 

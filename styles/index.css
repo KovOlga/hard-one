@@ -60,6 +60,13 @@
   background-color: var(--clr-body);
 }
 
+.intro {
+  display: grid;
+  grid-template-columns: minmax(250px, 460px) minmax(10px, 250px) minmax(400px, 610px);
+  grid-template-rows: 20px 60px auto 50px auto 50px auto 167px auto 209px;
+  grid-template-areas: ". . ." ". . img" "title . img" ". . img" "text . img" ". . img" "link . img" ". . img" "bicycle-name-line . img" ". . img";
+}
+
 .intro__title {
   margin: 0;
   padding: 0;
@@ -67,6 +74,7 @@
   font-weight: 700;
   font-size: 55px;
   line-height: 60px;
+  grid-area: title;
 }
 
 .intro__text {
@@ -77,6 +85,7 @@
   font-size: 18px;
   line-height: 28px;
   opacity: 0.7;
+  grid-area: text;
 }
 
 .intro__link {
@@ -92,13 +101,16 @@
   line-height: 18px;
   cursor: pointer;
   background-color: #24b47e;
+  grid-area: link;
 }
 
 .intro__main-bicycle-line {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
+  grid-area: bicycle-name-line;
 }
 
 .intro__main-bicycle-name {
@@ -120,6 +132,10 @@
   display: block;
   height: 0;
   min-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-area: img;
 }
 
 .footer {
