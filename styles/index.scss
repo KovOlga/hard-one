@@ -34,12 +34,18 @@
 
 //intro
 
+.intro {
+	display: grid;
+	grid-template-columns: ;
+}
+
 .intro__title {
 	@include textReset;
 	color: var(--clr-text-main);
 	font-weight: 700;
 	font-size: 55px;
 	line-height: 60px;
+	grid-area: title;
 }
 
 .intro__text {
@@ -49,6 +55,7 @@
 	font-size: 18px;
 	line-height: 28px;
 	opacity: 0.7;
+	grid-area: text;
 }
 
 .intro__link {
@@ -64,6 +71,7 @@
 	line-height: 18px;
 	cursor: pointer;
 	background-color: $btnColor;
+	grid-area: link;
 }
 
 .intro__main-bicycle-line {
@@ -71,6 +79,7 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 30px;
+	grid-area: bicycle-name-line;
 }
 
 .intro__main-bicycle-name {
@@ -91,6 +100,7 @@
 	display: block;
 	height: 0;
 	min-height: 100%;
+	grid-area: img;
 }
 
 // footer
