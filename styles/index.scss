@@ -22,6 +22,7 @@
 
 .header__nav-link {
 	text-decoration: none;
+	color: var(--clr-text-main);
 }
 
 // content
@@ -31,6 +32,61 @@
 	background-color: var(--clr-body);
 }
 
+//intro
+
+.intro__title {
+	@include textReset;
+	color: var(--clr-text-main);
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+}
+
+.intro__text {
+	@include textReset;
+	color: var(--clr-text-gray);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
+.intro__link {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	box-sizing: border-box;
+	width: 180px;
+	padding: 16px 10px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: pointer;
+	background-color: $btnColor;
+}
+
+.intro__main-bicycle-line {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+}
+
+.intro__main-bicycle-name {
+	@include textReset;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	color: var(--clr-text-main);
+}
+
+.intro__line {
+	width: 132px;
+	height: 2px;
+	background-color: var(--clr-line);
+}
+
 // footer
 
 .footer {
@@ -38,15 +94,8 @@
 	background-color: var(--clr-footer);
 	display: flex;
 	flex-direction: column;
-	gap: 80px;
 	box-sizing: border-box;
 	padding-right: 120px;
-}
-
-.footer__subscription-form {
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
 }
 
 .footer__subscription-title {
@@ -55,7 +104,10 @@
 	line-height: 32px;
 	margin: 0;
 	padding: 0;
+	color: var(--clr-text-main);
+	margin-bottom: 50px;
 }
+
 .footer__subscription-email {
 	width: 360px;
 	border: 1px solid rgba(199, 199, 199, 0.5);
@@ -73,16 +125,17 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-top: 80px;
 }
 
 .footer__copyright {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 20px;
-	color: #cfcfcf;
+	color: var(--clr-text-copyright);
 }
 
-// footer
+// dark/light mode
 
 .footer__mode {
 	display: flex;
@@ -96,7 +149,7 @@
 }
 
 // toggle
-.theme-mode {
+.mode-label {
 	position: relative;
 }
 .switch {
@@ -107,10 +160,10 @@
 	clip-path: inset(0 0 0 0);
 }
 
-.switch:checked + .slider {
+.switch:checked + .slider-visible {
 	background-color: #545454;
 }
-.slider {
+.slider-visible {
 	display: block;
 	width: 44px;
 	height: 24px;
@@ -119,7 +172,7 @@
 	border-radius: 50px;
 }
 
-.slider::before {
+.slider-visible::before {
 	content: "";
 	position: absolute;
 	top: 2px;
@@ -130,7 +183,7 @@
 	aspect-ratio: 1;
 }
 
-.switch:checked + .slider::before {
+.switch:checked + .slider-visible::before {
 	transform: translateX(20px);
 }
 

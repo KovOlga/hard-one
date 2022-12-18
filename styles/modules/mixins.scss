@@ -18,6 +18,11 @@
 	padding-left: 120px;
 }
 
+@mixin textReset {
+	margin: 0;
+	padding: 0;
+}
+
 @mixin desktop {
 	@media (min-width: 1024px) {
 		@content;
