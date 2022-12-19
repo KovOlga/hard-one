@@ -63,9 +63,19 @@
 	grid-area: title;
 }
 
+.intro__img {
+	display: block;
+	height: 0;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+	grid-area: img;
+}
+
 .intro__text {
 	@include textReset;
-	color: var(--clr-text-gray);
+	color: var(--clr-text-gray-intro);
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
@@ -110,15 +120,6 @@
 	width: 132px;
 	height: 2px;
 	background-color: var(--clr-line);
-}
-
-.intro__img {
-	display: block;
-	height: 0;
-	min-height: 100%;
-	max-width: 100%;
-	object-fit: cover;
-	grid-area: img;
 }
 
 // cyclist
@@ -173,8 +174,74 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 28px;
-	color: var(--clr-text-gray);
+	color: var(--clr-text-gray-rest);
 	opacity: 0.7;
+}
+
+// trainings
+
+.trainings {
+	box-sizing: border-box;
+	padding-top: 150px;
+	padding-bottom: 120px;
+	display: grid;
+	grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(
+			400px,
+			580px
+		);
+	grid-template-rows: auto 50px auto 182px auto;
+	// column-gap: 160px;
+	grid-template-areas:
+		"title . img"
+		". . img"
+		"description . img"
+		". . img"
+		"apps . img";
+}
+
+.trainings__title {
+	@include textReset;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+	letter-spacing: -0.5px;
+	color: var(--clr-text-main);
+	grid-area: title;
+}
+
+.trainings__img {
+	display: block;
+	grid-area: img;
+	height: 0;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.trainings__description {
+	@include textReset;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	opacity: 0.7;
+	color: var(--clr-text-gray-rest);
+	grid-area: description;
+}
+
+.trainings__apps {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	grid-area: apps;
+}
+
+.trainings__app-link {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: var(--clr-text-main);
 }
 
 // footer

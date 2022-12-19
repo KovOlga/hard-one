@@ -4,7 +4,8 @@
   --clr-body: #f4f4f4;
   --clr-footer: #efefef;
   --clr-text-main: #151515;
-  --clr-text-gray: #222222;
+  --clr-text-gray-intro: #222222;
+  --clr-text-gray-rest: #222222;
   --clr-text-copyright: #cfcfcf;
   --clr-line: #d7d4d4;
 }
@@ -13,7 +14,8 @@
   --clr-body: #333333;
   --clr-footer: #2f2f2f;
   --clr-text-main: #ffffff;
-  --clr-text-gray: #e6e6e6;
+  --clr-text-gray-intro: #e6e6e6;
+  --clr-text-gray-rest: #e5e5e5;
   --clr-text-copyright: #565656;
   --clr-line: #707070;
 }
@@ -77,10 +79,22 @@
   grid-area: title;
 }
 
+.intro__img {
+  display: block;
+  height: 0;
+  min-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  grid-area: img;
+}
+
 .intro__text {
   margin: 0;
   padding: 0;
-  color: var(--clr-text-gray);
+  color: var(--clr-text-gray-intro);
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -126,16 +140,6 @@
   width: 132px;
   height: 2px;
   background-color: var(--clr-line);
-}
-
-.intro__img {
-  display: block;
-  height: 0;
-  min-height: 100%;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  grid-area: img;
 }
 
 .cyclist {
@@ -192,8 +196,67 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  color: var(--clr-text-gray);
+  color: var(--clr-text-gray-rest);
   opacity: 0.7;
+}
+
+.trainings {
+  box-sizing: border-box;
+  padding-top: 150px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(400px, 580px);
+  grid-template-rows: auto 50px auto 182px auto;
+  grid-template-areas: "title . img" ". . img" "description . img" ". . img" "apps . img";
+}
+
+.trainings__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: var(--clr-text-main);
+  grid-area: title;
+}
+
+.trainings__img {
+  display: block;
+  grid-area: img;
+  height: 0;
+  min-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.trainings__description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  color: var(--clr-text-gray-rest);
+  grid-area: description;
+}
+
+.trainings__apps {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  grid-area: apps;
+}
+
+.trainings__app-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--clr-text-main);
 }
 
 .footer {
