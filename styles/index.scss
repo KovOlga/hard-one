@@ -121,6 +121,62 @@
 	grid-area: img;
 }
 
+// cyclist
+
+.cyclist {
+	display: flex;
+	flex-direction: row;
+	gap: 80px;
+	box-sizing: border-box;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	flex-wrap: wrap;
+}
+
+.cyclist__road-img {
+	display: block;
+	max-width: 650px;
+}
+
+.cyclist__quote-container {
+	@include textReset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cyclist__quote {
+	@include textReset;
+	max-width: 470px;
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 44px;
+	color: var(--clr-text-main);
+}
+
+.cyclist__info {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.cyclist__quote-author {
+	@include textReset;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	color: var(--clr-text-main);
+}
+
+.cyclist__quote-author-prof {
+	@include textReset;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: var(--clr-text-gray);
+	opacity: 0.7;
+}
+
 // footer
 
 .footer {
