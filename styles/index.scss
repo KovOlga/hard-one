@@ -214,6 +214,25 @@
 	opacity: 0.7;
 }
 
+// slider
+
+.slider__type-title {
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+	letter-spacing: -0.5px;
+	color: var(--clr-text-main);
+}
+
+.slider__type-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	max-width: 460px;
+	opacity: 0.7;
+	color: var(--clr-text-gray-rest);
+}
+
 // trainings
 
 .trainings {
