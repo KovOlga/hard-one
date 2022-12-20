@@ -143,29 +143,34 @@
   background-color: var(--clr-line);
 }
 
-.parallax {
+.intro__bike {
   position: absolute;
-  box-sizing: border-box;
-  min-width: 810px;
-  right: 0;
+  width: 100%;
   height: 100%;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding-left: 510px;
   z-index: 10;
-  padding-top: 347px;
   padding-bottom: 79px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.parallax__img-container {
+.intro__bike-fix {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 347px;
+  box-sizing: border-box;
   background: #f4f4f4;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
-  box-sizing: border-box;
   padding: 20px 50px;
+  transition: transform 0.4s linear;
 }
 
-.parallax__img {
+.intro__bike-img {
   display: block;
 }
 
