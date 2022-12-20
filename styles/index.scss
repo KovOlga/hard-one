@@ -219,6 +219,7 @@
 // slider
 
 .slider__type-title {
+	@include textReset;
 	box-sizing: border-box;
 	padding-left: 120px;
 	font-weight: 700;
