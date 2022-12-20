@@ -14,16 +14,22 @@ switchBtn.addEventListener("change", changeDarkMode);
 
 const menu = ["Шоссе", "Грэвел", "ТТ"];
 
-const swiperIntro = new Swiper(".swiper__types", {
-	pagination: {
-		el: ".swiper-pagination",
-		renderBullet: function (index, className) {
-			return '<span class="' + className + '">' + menu[index] + "</span>";
-		},
-	},
+const swiperTypes = new Swiper(".slider-types", {
+	loop: false,
 	navigation: {
 		nextEl: ".swiper__switch-btn_intro_next",
 		prevEl: ".swiper__switch-btn_intro_prev",
+	},
+	slidesPerView: 1,
+});
+
+const swiperCycles = new Swiper(".swiper__cycles", {
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + menu[index] + "</span>";
+		},
 	},
 	slidesPerView: 1,
 });
