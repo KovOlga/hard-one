@@ -22,8 +22,8 @@ const swiperIntro = new Swiper(".swiper__types", {
 			return '<span class="' + className + '">' + menu[index] + "</span>";
 		},
 	},
-	// navigation: {
-	// 	nextEl: ".swiper__switch-btn_intro_next",
-	// 	prevEl: ".swiper__switch-btn_intro_prev",
-	// },
+	navigation: {
+		nextEl: ".swiper__switch-btn_intro_next",
+		prevEl: ".swiper__switch-btn_intro_prev",
+	},
 });
