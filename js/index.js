@@ -15,7 +15,6 @@ switchBtn.addEventListener("change", changeDarkMode);
 const menu = ["Шоссе", "Грэвел", "ТТ"];
 
 const swiperIntro = new Swiper(".swiper__types", {
-	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
 		renderBullet: function (index, className) {
@@ -26,4 +25,5 @@ const swiperIntro = new Swiper(".swiper__types", {
 		nextEl: ".swiper__switch-btn_intro_next",
 		prevEl: ".swiper__switch-btn_intro_prev",
 	},
+	slidesPerView: 1,
 });

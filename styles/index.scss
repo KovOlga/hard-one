@@ -31,13 +31,14 @@
 // content
 
 .content {
-	@include mainPadLeft;
 	background-color: var(--clr-body);
 }
 
 //intro
 
 .intro {
+	box-sizing: border-box;
+	padding-left: 120px;
 	position: relative;
 	display: grid;
 	grid-template-columns: minmax(250px, 460px) minmax(10px, 250px) minmax(
@@ -161,12 +162,13 @@
 // cyclist
 
 .cyclist {
+	box-sizing: border-box;
+	padding-left: 120px;
+	padding-top: 120px;
+	padding-bottom: 60px;
 	display: flex;
 	flex-direction: row;
 	gap: 80px;
-	box-sizing: border-box;
-	padding-top: 120px;
-	padding-bottom: 60px;
 	flex-wrap: wrap;
 }
 
@@ -217,6 +219,8 @@
 // slider
 
 .slider__type-title {
+	box-sizing: border-box;
+	padding-left: 120px;
 	font-weight: 700;
 	font-size: 55px;
 	line-height: 60px;
@@ -225,12 +229,76 @@
 }
 
 .slider__type-text {
+	@include textReset;
+	padding-left: 120px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
-	max-width: 460px;
+	width: 460px;
 	opacity: 0.7;
 	color: var(--clr-text-gray-rest);
+}
+
+.slider__type-images {
+	box-sizing: border-box;
+	padding-left: 120px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+}
+
+.slider__type-image {
+	display: block;
+	object-fit: contain;
+}
+
+.slider__cycle-title {
+	@include textReset;
+	box-sizing: border-box;
+	padding-left: 120px;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+	letter-spacing: -0.5px;
+	color: var(--clr-text-main);
+}
+
+.slider__cycle-images {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	box-sizing: border-box;
+	padding-top: 120px;
+	padding-left: 120px;
+	padding-bottom: 180px;
+}
+
+.slider__cycle-images-figure {
+	box-sizing: border-box;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.slider__cycle-image-container {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 20px;
+	background: #f4f4f4;
+	border-radius: 20px;
+	filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+}
+
+.slider__cycle-image {
+	display: block;
+}
+
+.slider__cycle-images-caption {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--clr-text-main);
 }
 
 // .swiper-pagination
@@ -296,19 +364,11 @@
 	background-image: url("../images/ArrowRight.svg");
 }
 
-.slider__cycle-title {
-	font-weight: 700;
-	font-size: 55px;
-	line-height: 60px;
-	letter-spacing: -0.5px;
-	color: var(--clr-text-main);
-}
-
 // trainings
 
 .trainings {
 	box-sizing: border-box;
-	padding-top: 150px;
+	padding-left: 120px;
 	padding-bottom: 120px;
 	display: grid;
 	grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(
