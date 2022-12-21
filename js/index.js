@@ -35,10 +35,15 @@ const swiperCycles = new Swiper(".swiper__cycles", {
 });
 
 const formSubscription = document.querySelector(".footer__subscription-form");
+const emailInput = document.querySelector(".footer__subscription-email");
+
+function writeCool() {
+	emailInput.value = "Круто!";
+}
 
 function submitSubscription(evt) {
 	evt.preventDefault();
-	console.log("submited");
+	writeCool();
 }
 
 formSubscription.addEventListener("submit", submitSubscription);
