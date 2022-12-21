@@ -168,23 +168,22 @@
 // bike-fix
 
 .intro__bike {
+	box-sizing: border-box;
 	position: absolute;
-	height: 100%;
+	z-index: 100;
 	top: 0;
 	right: 0;
-	box-sizing: border-box;
-	padding-right: 370px;
-	z-index: 10;
-	padding-bottom: 79px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	height: 100%;
+	max-width: 30%;
+	padding-bottom: 164px;
+	margin-right: 25%;
 }
 
 .intro__bike-fix {
-	position: sticky;
-	top: 347px;
 	box-sizing: border-box;
+	position: sticky;
+	top: 392px;
+	max-width: 100%;
 	background: #f4f4f4;
 	box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
 	border-radius: 20px;
@@ -193,7 +192,10 @@
 }
 
 .intro__bike-img {
+	max-width: 100%;
 	display: block;
+	object-fit: contain;
+	object-position: center;
 }
 
 // cyclist
