@@ -540,7 +540,7 @@
 
 .footer__subscription-email {
 	width: 360px;
-	border: 1px solid rgba(199, 199, 199, 0.5);
+	border: var(--border-subscription-input);
 	border-radius: 4px;
 	background: none;
 	box-sizing: border-box;
@@ -549,6 +549,26 @@
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 28px;
+	cursor: pointer;
+	transition: all 0.4s linear;
+}
+
+.footer__subscription-email::placeholder {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 28px;
+	opacity: 0.7;
+	transition: all 0.4s linear;
+	color: var(--clr-subscription-placeholder);
+}
+
+.footer__subscription-email:hover::placeholder {
+	color: var(--clr-text-main);
+	opacity: 1;
+}
+
+.footer__subscription-email:focus {
+	outline: var(--outline-subscription-focus);
 }
 
 .footer__copyright-mode-container {

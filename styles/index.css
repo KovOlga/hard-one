@@ -9,6 +9,9 @@
   --clr-text-copyright: #cfcfcf;
   --clr-line: #d7d4d4;
   --clr-slider-arrows: #ebebeb;
+  --clr-subscription-placeholder: #222222;
+  --border-subscription-input: 1px solid rgba(199, 199, 199, 0.5);
+  --outline-subscription-focus: 1px solid #c7c7c7;
 }
 
 .darkMode {
@@ -20,6 +23,9 @@
   --clr-text-copyright: #565656;
   --clr-line: #707070;
   --clr-slider-arrows: #434343;
+  --clr-subscription-placeholder: #ffffff;
+  --border-subscription-input: 1px solid rgba(125, 125, 125, 0.5);
+  --outline-subscription-focus: 1px solid #7d7d7d;
 }
 
 .body {
@@ -558,7 +564,7 @@
 
 .footer__subscription-email {
   width: 360px;
-  border: 1px solid rgba(199, 199, 199, 0.5);
+  border: var(--border-subscription-input);
   border-radius: 4px;
   background: none;
   box-sizing: border-box;
@@ -567,6 +573,56 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 28px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.footer__subscription-email::-moz-placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  opacity: 0.7;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  color: var(--clr-subscription-placeholder);
+}
+
+.footer__subscription-email:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  opacity: 0.7;
+  -ms-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  color: var(--clr-subscription-placeholder);
+}
+
+.footer__subscription-email::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  opacity: 0.7;
+  transition: all 0.4s linear;
+  color: var(--clr-subscription-placeholder);
+}
+
+.footer__subscription-email:hover::-moz-placeholder {
+  color: var(--clr-text-main);
+  opacity: 1;
+}
+
+.footer__subscription-email:hover:-ms-input-placeholder {
+  color: var(--clr-text-main);
+  opacity: 1;
+}
+
+.footer__subscription-email:hover::placeholder {
+  color: var(--clr-text-main);
+  opacity: 1;
+}
+
+.footer__subscription-email:focus {
+  outline: var(--outline-subscription-focus);
 }
 
 .footer__copyright-mode-container {

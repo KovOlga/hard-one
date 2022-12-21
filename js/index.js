@@ -33,3 +33,12 @@ const swiperCycles = new Swiper(".swiper__cycles", {
 	},
 	slidesPerView: 1,
 });
+
+const formSubscription = document.querySelector(".footer__subscription-form");
+
+function submitSubscription(evt) {
+	evt.preventDefault();
+	console.log("submited");
+}
+
+formSubscription.addEventListener("submit", submitSubscription);

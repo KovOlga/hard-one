@@ -11,6 +11,9 @@ $btnColor: #24b47e;
 	--clr-text-copyright: #cfcfcf;
 	--clr-line: #d7d4d4;
 	--clr-slider-arrows: #ebebeb;
+	--clr-subscription-placeholder: #222222;
+	--border-subscription-input: 1px solid rgba(199, 199, 199, 0.5);
+	--outline-subscription-focus: 1px solid #c7c7c7;
 }
 
 .darkMode {
@@ -22,4 +25,7 @@ $btnColor: #24b47e;
 	--clr-text-copyright: #565656;
 	--clr-line: #707070;
 	--clr-slider-arrows: #434343;
+	--clr-subscription-placeholder: #ffffff;
+	--border-subscription-input: 1px solid rgba(125, 125, 125, 0.5);
+	--outline-subscription-focus: 1px solid #7d7d7d;
 }
