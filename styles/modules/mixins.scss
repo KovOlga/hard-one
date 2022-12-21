@@ -23,6 +23,14 @@
 	padding: 0;
 }
 
+@mixin link {
+	cursor: pointer;
+	color: var(--clr-text-main);
+	text-decoration: none;
+	opacity: 1;
+	transition: opacity 0.4s linear;
+}
+
 @mixin desktop {
 	@media (min-width: 1024px) {
 		@content;

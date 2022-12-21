@@ -24,8 +24,14 @@
 }
 
 .header__nav-link {
-	text-decoration: none;
-	color: var(--clr-text-main);
+	@include link;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.header__nav-link:hover {
+	opacity: 0.75;
 }
 
 // content
@@ -327,6 +333,7 @@
 }
 
 .slider__cycle-images-figure {
+	cursor: pointer;
 	box-sizing: border-box;
 	margin: 0;
 	display: flex;
@@ -388,14 +395,24 @@
 	font-size: 18px;
 	line-height: 28px;
 	opacity: 0.7;
+	transition: opacity 0.4s linear;
 	background: inherit;
 	color: var(--clr-text-gray-rest);
+}
+
+.swiper-pagination-bullet:hover {
+	opacity: 0.6;
 }
 
 .swiper-pagination-bullet-active {
 	font-weight: 600;
 	opacity: 1;
+	transition: opacity 0.4s linear;
 	color: var(--clr-text-main);
+}
+
+.swiper-pagination-bullet-active:hover {
+	opacity: 0.75;
 }
 
 // trainings
@@ -457,11 +474,14 @@
 }
 
 .trainings__app-link {
-	text-decoration: none;
+	@include link;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 28px;
-	color: var(--clr-text-main);
+}
+
+.trainings__app-link:hover {
+	opacity: 0.75;
 }
 
 // footer
