@@ -21,7 +21,7 @@ const swiperTypes = new Swiper(".slider-types", {
 });
 
 const menu = ["Шоссе", "Грэвел", "ТТ"];
-const swiperCycles = new Swiper(".swiper__cycles", {
+const swiperCycles = new Swiper(".slider-cycles", {
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
