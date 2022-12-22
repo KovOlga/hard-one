@@ -100,16 +100,16 @@
 
 // .slider-cycles
 
-// @include desktop {
-// 	margin: 0 auto;
-// 	width: 284px;
-// 	padding-top: 40px;
-// 	border-top: 1px solid #e3e3e3;
-// 	padding-bottom: 80px;
-// }
-
 .slider-cycles {
-	margin-top: 120px;
+	box-sizing: border-box;
+	padding-top: 120px;
+
+	@include desktop {
+		width: 284px;
+		margin: 0 auto;
+		padding-top: 40px;
+		border-top: 1px solid #e3e3e3;
+	}
 }
 
 .slider-cycles__title {
@@ -121,6 +121,12 @@
 	line-height: 60px;
 	letter-spacing: -0.5px;
 	color: var(--clr-text-main);
+
+	@include desktop {
+		padding-left: 0;
+		font-size: 32px;
+		line-height: 40px;
+	}
 }
 
 .slider-cycles__images {
