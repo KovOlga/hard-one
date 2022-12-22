@@ -7,13 +7,21 @@
 @import "./modules/blocks/page/page";
 
 // cyclist
-@import url("./modules/blocks/cyclist/cyclist.scss");
-@import url("./modules/blocks/cyclist/__road-img/cyclist__road-img.scss");
-@import url("./modules/blocks/cyclist/__quote-container/cyclist__quote-container.scss");
-@import url("./modules/blocks/cyclist/__quote/cyclist__quote.scss");
-@import url("./modules/blocks/cyclist/__info/cyclist__info.scss");
-@import url("./modules/blocks/cyclist/__quote-author/cyclist__quote-author.scss");
-@import url("./modules/blocks/cyclist/__quote-author-prof/cyclist__quote-author-prof.scss");
+@import "./modules/blocks/cyclist/cyclist";
+@import "./modules/blocks/cyclist/__road-img/cyclist__road-img";
+@import "./modules/blocks/cyclist/__quote-container/cyclist__quote-container";
+@import "./modules/blocks/cyclist/__quote/cyclist__quote";
+@import "./modules/blocks/cyclist/__info/cyclist__info";
+@import "./modules/blocks/cyclist/__quote-author/cyclist__quote-author";
+@import "./modules/blocks/cyclist/__quote-author-prof/cyclist__quote-author-prof";
+
+// trainings
+@import "./modules/blocks/trainings/trainings";
+@import "./modules/blocks/trainings/__title/trainings__title";
+@import "./modules/blocks/trainings/__img/trainings__img";
+@import "./modules/blocks/trainings/__description/trainings__description";
+@import "./modules/blocks/trainings/__apps/trainings__apps";
+@import "./modules/blocks/trainings/__app-link/trainings__app-link";
 
 // header
 
@@ -398,74 +406,6 @@
 }
 
 .swiper-pagination-bullet-active:hover {
-	opacity: 0.75;
-}
-
-// trainings
-
-.trainings {
-	box-sizing: border-box;
-	padding-left: 120px;
-	padding-bottom: 120px;
-	display: grid;
-	grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(
-			400px,
-			580px
-		);
-	grid-template-rows: auto 50px auto 182px auto;
-	grid-template-areas:
-		"title . img"
-		". . img"
-		"description . img"
-		". . img"
-		"apps . img";
-}
-
-.trainings__title {
-	@include textReset;
-	font-weight: 700;
-	font-size: 55px;
-	line-height: 60px;
-	letter-spacing: -0.5px;
-	color: var(--clr-text-main);
-	grid-area: title;
-}
-
-.trainings__img {
-	display: block;
-	grid-area: img;
-	height: 0;
-	min-height: 100%;
-	max-width: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-
-.trainings__description {
-	@include textReset;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 28px;
-	opacity: 0.7;
-	color: var(--clr-text-gray-rest);
-	grid-area: description;
-}
-
-.trainings__apps {
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
-	grid-area: apps;
-}
-
-.trainings__app-link {
-	@include link;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 28px;
-}
-
-.trainings__app-link:hover {
 	opacity: 0.75;
 }
 

@@ -1,12 +1,5 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts.css";
-@import url("./modules/blocks/cyclist/cyclist.scss");
-@import url("./modules/blocks/cyclist/__road-img/cyclist__road-img.scss");
-@import url("./modules/blocks/cyclist/__quote-container/cyclist__quote-container.scss");
-@import url("./modules/blocks/cyclist/__quote/cyclist__quote.scss");
-@import url("./modules/blocks/cyclist/__info/cyclist__info.scss");
-@import url("./modules/blocks/cyclist/__quote-author/cyclist__quote-author.scss");
-@import url("./modules/blocks/cyclist/__quote-author-prof/cyclist__quote-author-prof.scss");
 :root {
   --clr-body: #f4f4f4;
   --clr-footer: #efefef;
@@ -53,6 +46,215 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   outline: green solid 1px;
+}
+
+.cyclist {
+  box-sizing: border-box;
+  padding-left: 120px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .cyclist {
+    display: flex;
+    flex-direction: column;
+    max-width: 284px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 20px;
+    border-top: 1px solid #e3e3e3;
+    padding-bottom: 80px;
+    gap: 40px;
+  }
+}
+
+.cyclist__road-img {
+  display: block;
+  max-width: 650px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 900px) {
+  .cyclist__road-img {
+    max-width: 100%;
+  }
+}
+
+.cyclist__quote-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .cyclist__quote-container {
+    gap: 40px;
+  }
+}
+
+.cyclist__quote {
+  margin: 0;
+  padding: 0;
+  max-width: 470px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+  color: var(--clr-text-main);
+}
+@media (max-width: 900px) {
+  .cyclist__quote {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+
+.cyclist__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .cyclist__info {
+    gap: 4px;
+  }
+}
+
+.cyclist__quote-author {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--clr-text-main);
+}
+@media (max-width: 900px) {
+  .cyclist__quote-author {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.cyclist__quote-author-prof {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--clr-text-gray-rest);
+  opacity: 0.7;
+}
+@media (max-width: 900px) {
+  .cyclist__quote-author-prof {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
+.trainings {
+  box-sizing: border-box;
+  padding-left: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(400px, 580px);
+  grid-template-rows: auto 50px auto 182px auto;
+  grid-template-areas: "title . img" ". . img" "description . img" ". . img" "apps . img";
+}
+@media (max-width: 900px) {
+  .trainings {
+    max-width: 284px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    border-top: 1px solid #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.trainings__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: var(--clr-text-main);
+  grid-area: title;
+}
+@media (max-width: 900px) {
+  .trainings__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.trainings__img {
+  display: block;
+  grid-area: img;
+  height: 0;
+  min-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 900px) {
+  .trainings__img {
+    min-height: 225px;
+  }
+}
+
+.trainings__description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  color: var(--clr-text-gray-rest);
+  grid-area: description;
+}
+@media (max-width: 900px) {
+  .trainings__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.trainings__apps {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  grid-area: apps;
+}
+
+.trainings__app-link {
+  cursor: pointer;
+  color: var(--clr-text-main);
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 900px) {
+  .trainings__app-link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.trainings__app-link:hover {
+  opacity: 0.75;
 }
 
 .header {
@@ -425,72 +627,6 @@
 }
 
 .swiper-pagination-bullet-active:hover {
-  opacity: 0.75;
-}
-
-.trainings {
-  box-sizing: border-box;
-  padding-left: 120px;
-  padding-bottom: 120px;
-  display: grid;
-  grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(400px, 580px);
-  grid-template-rows: auto 50px auto 182px auto;
-  grid-template-areas: "title . img" ". . img" "description . img" ". . img" "apps . img";
-}
-
-.trainings__title {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
-  letter-spacing: -0.5px;
-  color: var(--clr-text-main);
-  grid-area: title;
-}
-
-.trainings__img {
-  display: block;
-  grid-area: img;
-  height: 0;
-  min-height: 100%;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.trainings__description {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  opacity: 0.7;
-  color: var(--clr-text-gray-rest);
-  grid-area: description;
-}
-
-.trainings__apps {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  grid-area: apps;
-}
-
-.trainings__app-link {
-  cursor: pointer;
-  color: var(--clr-text-main);
-  text-decoration: none;
-  opacity: 1;
-  transition: opacity 0.4s linear;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.trainings__app-link:hover {
   opacity: 0.75;
 }
 

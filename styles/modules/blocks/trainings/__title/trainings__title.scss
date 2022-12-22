@@ -1,0 +1,14 @@
+.trainings__title {
+	@include textReset;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+	letter-spacing: -0.5px;
+	color: var(--clr-text-main);
+	grid-area: title;
+
+	@include desktop {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
