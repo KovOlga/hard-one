@@ -1,0 +1,11 @@
+.slider-cycles {
+	box-sizing: border-box;
+	padding-top: 120px;
+
+	@include desktop {
+		width: 284px;
+		margin: 0 auto;
+		padding-top: 40px;
+		border-top: 1px solid #e3e3e3;
+	}
+}

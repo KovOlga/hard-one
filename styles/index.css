@@ -910,16 +910,18 @@
 }
 
 .slider-cycles__images {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   box-sizing: border-box;
   padding-top: 120px;
   padding-left: 120px;
   padding-bottom: 210px;
+  padding-right: 120px;
 }
 
-.slider-cycles__image-figure {
+.cycle-item {
+  width: 100%;
   cursor: pointer;
   box-sizing: border-box;
   margin: 0;
@@ -928,7 +930,8 @@
   gap: 22px;
 }
 
-.slider-cycles__image-container {
+.cycle-item__image-container {
+  width: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 20px;
@@ -937,16 +940,23 @@
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.06);
 }
 
-.slider-cycles__image {
+.cycle-item__image {
+  width: 100%;
   display: block;
 }
 
-.slider-cycles__image-caption {
+.cycle-item__image-caption {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: var(--clr-text-main);
+}
+@media (max-width: 900px) {
+  .cycle-item__image-caption {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -956,7 +966,7 @@
   box-sizing: border-box;
   padding-right: 120px;
   text-align: right;
-  bottom: 754px;
+  bottom: 81%;
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -997,23 +1007,4 @@
 
 .swiper-pagination-bullet-active:hover {
   opacity: 0.75;
-}
-
-.icon-test {
-  background-image: url();
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-}
-
-.example__logo {
-  width: 100px;
-}
-.example__logo:hover {
-  color: gray;
-}
-@media (min-width: 500px) {
-  .example__logo {
-    width: 200px;
-  }
 }/*# sourceMappingURL=index.css.map */
