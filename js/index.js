@@ -11,8 +11,6 @@ function changeDarkMode() {
 
 switchBtn.addEventListener("change", changeDarkMode);
 
-const menu = ["Шоссе", "Грэвел", "ТТ"];
-
 const swiperTypes = new Swiper(".slider-types", {
 	loop: false,
 	navigation: {
@@ -22,6 +20,7 @@ const swiperTypes = new Swiper(".slider-types", {
 	slidesPerView: 1,
 });
 
+const menu = ["Шоссе", "Грэвел", "ТТ"];
 const swiperCycles = new Swiper(".swiper__cycles", {
 	pagination: {
 		el: ".swiper-pagination",
