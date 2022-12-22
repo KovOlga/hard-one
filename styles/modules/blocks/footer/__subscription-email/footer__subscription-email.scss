@@ -1,0 +1,23 @@
+.footer__subscription-email {
+	background: inherit;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	@include subscriptionFont;
+	cursor: pointer;
+	transition: all 0.4s linear;
+	color: var(--clr-text-main);
+}
+
+.footer__subscription-email::placeholder {
+	@include subscriptionFont;
+	opacity: 0.7;
+	transition: all 0.4s linear;
+	color: var(--clr-subscription-placeholder);
+}
+
+.footer__subscription-email:hover::placeholder {
+	color: var(--clr-text-main);
+	opacity: 1;
+}
