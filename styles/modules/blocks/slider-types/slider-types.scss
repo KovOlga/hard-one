@@ -1,0 +1,14 @@
+.slider-types {
+	box-sizing: border-box;
+	padding-top: 60px;
+	padding-bottom: 50px;
+	width: 100%;
+
+	@include desktop {
+		margin: 0 auto;
+		width: 284px;
+		padding-top: 40px;
+		border-top: 1px solid #e3e3e3;
+		padding-bottom: 80px;
+	}
+}
