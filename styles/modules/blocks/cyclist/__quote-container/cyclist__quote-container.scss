@@ -1,0 +1,10 @@
+.cyclist__quote-container {
+	@include textReset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@include desktop {
+		gap: 40px;
+	}
+}

@@ -1,0 +1,9 @@
+.cyclist__info {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+
+	@include desktop {
+		gap: 4px;
+	}
+}

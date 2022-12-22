@@ -1,0 +1,21 @@
+.cyclist {
+	box-sizing: border-box;
+	padding-left: 120px;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	display: flex;
+	gap: 80px;
+	flex-wrap: wrap;
+
+	@include desktop {
+		display: flex;
+		flex-direction: column;
+		max-width: 284px;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-top: 20px;
+		border-top: 1px solid #e3e3e3;
+		padding-bottom: 80px;
+		gap: 40px;
+	}
+}
