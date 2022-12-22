@@ -48,6 +48,10 @@
   outline: green solid 1px;
 }
 
+.content {
+  background-color: var(--clr-body);
+}
+
 .cyclist {
   box-sizing: border-box;
   padding-left: 120px;
@@ -509,10 +513,6 @@
 
 .header__nav-link:hover {
   opacity: 0.75;
-}
-
-.content {
-  background-color: var(--clr-body);
 }
 
 .intro {

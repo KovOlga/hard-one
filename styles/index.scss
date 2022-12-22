@@ -5,6 +5,7 @@
 
 @import "./modules/blocks/body/body";
 @import "./modules/blocks/page/page";
+@import "./modules/blocks/content/content";
 
 // cyclist
 @import "./modules/blocks/cyclist/cyclist";
@@ -66,12 +67,6 @@
 
 .header__nav-link:hover {
 	opacity: 0.75;
-}
-
-// content
-
-.content {
-	background-color: var(--clr-body);
 }
 
 //intro
