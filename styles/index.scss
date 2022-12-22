@@ -7,6 +7,22 @@
 @import "./modules/blocks/page/page";
 @import "./modules/blocks/content/content";
 
+//intro
+@import "./modules/blocks/intro/intro";
+@import "./modules/blocks/intro/__title/intro__title";
+
+@import "./modules/blocks/intro/__text/intro__text";
+@import "./modules/blocks/intro/__link/intro__link";
+@import "./modules/blocks/intro/__bicycle-name-container/intro__bicycle-name-container";
+@import "./modules/blocks/intro/__bicycle-name/intro__bicycle-name";
+@import "./modules/blocks/intro/__bicycle-name-line/intro__bicycle-name-line";
+
+@import "./modules/blocks/intro/__img-bike-container/intro__img-bike-container";
+@import "./modules/blocks/intro/__img/intro__img";
+@import "./modules/blocks/intro/__bike/intro__bike";
+@import "./modules/blocks/intro/__bike-fix/intro__bike-fix";
+@import "./modules/blocks/intro/__bike-img/intro__bike-img";
+
 // cyclist
 @import "./modules/blocks/cyclist/cyclist";
 @import "./modules/blocks/cyclist/__road-img/cyclist__road-img";
@@ -67,65 +83,6 @@
 
 .header__nav-link:hover {
 	opacity: 0.75;
-}
-
-//intro
-@import "./modules/blocks/intro/intro";
-@import "./modules/blocks/intro/__title/intro__title";
-
-@import "./modules/blocks/intro/__text/intro__text";
-@import "./modules/blocks/intro/__link/intro__link";
-@import "./modules/blocks/intro/__bicycle-name-container/intro__bicycle-name-container";
-@import "./modules/blocks/intro/__bicycle-name/intro__bicycle-name";
-@import "./modules/blocks/intro/__bicycle-name-line/intro__bicycle-name-line";
-
-.intro__img {
-	display: block;
-	height: 0;
-	min-height: 100%;
-	max-width: 100%;
-	object-fit: cover;
-	object-position: center;
-	grid-area: img;
-
-	@include desktop {
-		align-self: flex-end;
-		max-width: 254px;
-		min-height: 348px;
-	}
-}
-
-// bike-fix
-
-.intro__bike {
-	box-sizing: border-box;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	height: 100%;
-	max-width: 30%;
-	padding-bottom: 164px;
-	margin-right: 25%;
-}
-
-.intro__bike-fix {
-	box-sizing: border-box;
-	position: sticky;
-	top: 392px;
-	max-width: 100%;
-	background: #f4f4f4;
-	box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
-	border-radius: 20px;
-	padding: 20px 50px;
-	transition: transform 0.4s linear;
-}
-
-.intro__bike-img {
-	max-width: 100%;
-	display: block;
-	object-fit: contain;
-	object-position: center;
 }
 
 // .slider-types

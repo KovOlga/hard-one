@@ -1,0 +1,14 @@
+.intro__img {
+	display: block;
+	height: 0;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+
+	@include desktop {
+		align-self: flex-end;
+		max-width: 254px;
+		min-height: 348px;
+	}
+}

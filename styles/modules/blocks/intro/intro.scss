@@ -3,30 +3,28 @@
 	padding-left: 120px;
 	position: relative;
 	display: grid;
-	grid-template-columns: minmax(250px, 460px) minmax(10px, 250px) minmax(
-			400px,
-			610px
-		);
+	grid-template-columns: minmax(250px, 460px) minmax(400px, 860px);
 	grid-template-rows: 20px 60px auto 50px auto 50px auto 167px auto 209px;
 	grid-template-areas:
-		". . ."
-		". . img"
-		"title . img"
-		". . img"
-		"text . img"
-		". . img"
-		"link . img"
-		". . img"
-		"bicycle-name-line . img"
-		". . img";
+		". ."
+		". img"
+		"title img"
+		". img"
+		"text img"
+		". img"
+		"link img"
+		". img"
+		"bicycle-name-line img"
+		". img";
 
 	@include desktop {
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
-		max-width: 284px;
+		max-width: 320px;
 		margin: 0 auto;
-		padding-left: 0;
+		padding-left: 18px;
+		padding-right: 18px;
 		padding-bottom: 80px;
 	}
 }
