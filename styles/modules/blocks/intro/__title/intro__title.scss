@@ -1,0 +1,14 @@
+.intro__title {
+	@include textReset;
+	color: var(--clr-text-main);
+	letter-spacing: -0.5px;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+	grid-area: title;
+
+	@include desktop {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}

@@ -1,0 +1,12 @@
+.intro__bicycle-name-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	grid-area: bicycle-name-line;
+
+	@include desktop {
+		display: none;
+	}
+}
