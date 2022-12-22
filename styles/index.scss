@@ -90,83 +90,68 @@
 .slider-types {
 	box-sizing: border-box;
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
+
+	@include desktop {
+		margin: 0 auto;
+		width: 284px;
+		padding-top: 40px;
+		border-top: 1px solid #e3e3e3;
+		padding-bottom: 80px;
+	}
 }
 
-.slider__type-title {
-	@include textReset;
+@import "./modules/blocks/slider-types/__title/slider-types__title";
+
+.slider-types__container {
 	box-sizing: border-box;
+	margin-top: 50px;
 	padding-left: 120px;
-	margin-bottom: 50px;
-	font-weight: 700;
-	font-size: 55px;
-	line-height: 60px;
-	letter-spacing: -0.5px;
-	color: var(--clr-text-main);
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	padding-bottom: 50px;
+
+	@include desktop {
+		flex-direction: column-reverse;
+		gap: 40px;
+		margin-top: 40px;
+		padding-left: 0;
+		padding-bottom: 0;
+	}
 }
 
-.slider__type-text {
-	@include textReset;
-	padding-left: 120px;
-	margin-bottom: 80px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 28px;
-	width: 460px;
-	opacity: 0.7;
-	color: var(--clr-text-gray-rest);
-}
+@import "./modules/blocks/slider-types/__text/slider-types__text";
 
-.slider__type-images {
+.slider-types__images {
 	box-sizing: border-box;
-	padding-left: 120px;
-	padding-bottom: 100px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 40px;
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
 }
 
-.slider__type-image {
+.slider-types__image {
 	display: block;
 	object-fit: contain;
+	max-width: 650px;
+	max-height: 400px;
+
+	@include desktop {
+		max-width: 284px;
+		max-height: 175px;
+	}
+}
+
+.slider-types__image:last-of-type {
+	@include desktop {
+		display: none;
+	}
 }
 
 // .swiper-navigation
-
-.swiper__switch-btn {
-	padding: 0;
-	margin: 0;
-	border: none;
-	position: absolute;
-	bottom: 0;
-	z-index: 10;
-	cursor: pointer;
-	width: 50px;
-	aspect-ratio: 1;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: var(--clr-slider-arrows);
-	opacity: 1;
-	transition: opacity 0.4s linear;
-}
-
-.swiper__switch-btn:hover {
-	opacity: 0.6;
-}
-
-.swiper__switch-btn_intro_prev {
-	left: 120px;
-	background-image: url("../images/ArrowLeft.svg");
-}
-
-.swiper__switch-btn_intro_next {
-	left: 190px;
-	background-image: url("../images/ArrowRight.svg");
-}
+@import "./modules/blocks/swiper/__switch-btn/swiper__switch-btn";
+@import "./modules/blocks/swiper/__switch-btn/_intro/swiper__switch-btn_intro_next";
+@import "./modules/blocks/swiper/__switch-btn/_intro/swiper__switch-btn_intro_prev";
 
 // .slider-cycles
 
