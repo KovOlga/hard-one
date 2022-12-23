@@ -6,4 +6,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
+
+	@include desktop {
+		padding-top: 90px;
+		padding-bottom: 144px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
 }

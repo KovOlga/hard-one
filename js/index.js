@@ -32,21 +32,27 @@ const swiperCycles = new Swiper(".slider-cycles", {
 	slidesPerView: 1,
 });
 
-const sliderSelectShosse = new Swiper(".slider-bicycles-select_type_shosse", {
-	pagination: {
-		el: ".swiper-pagination",
-	},
-	slidesPerView: 1,
-});
+const sliderSelectShosse = new Swiper(
+	".slider-cycles-select__container_type_shosse",
+	{
+		pagination: {
+			el: ".swiper-pagination",
+		},
+		slidesPerView: 1,
+	}
+);
 
-const sliderSelectGrevel = new Swiper(".slider-bicycles-select_type_grevel", {
-	pagination: {
-		el: ".swiper-pagination",
-	},
-	slidesPerView: 1,
-});
+const sliderSelectGrevel = new Swiper(
+	".slider-cycles-select__container_type_grevel",
+	{
+		pagination: {
+			el: ".swiper-pagination",
+		},
+		slidesPerView: 1,
+	}
+);
 
-const sliderSelectTt = new Swiper(".slider-bicycles-select_type_tt", {
+const sliderSelectTt = new Swiper(".slider-cycles-select__container_type_tt", {
 	pagination: {
 		el: ".swiper-pagination",
 	},
