@@ -1038,15 +1038,11 @@
   .slider-cycles-select {
     display: block;
     position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 40px;
   }
-}
-
-.slider-cycles-select {
-  position: relative;
-  max-width: 320px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  margin-top: 40px;
 }
 
 .slider-cycles-select__selects {

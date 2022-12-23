@@ -193,37 +193,8 @@
 
 // slider-cycles-select
 @import "./modules/blocks/slider-cycles-select/slider-cycles-select";
-.slider-cycles-select {
-	position: relative;
-	max-width: 320px;
-	margin: 0 auto;
-	box-sizing: border-box;
-	margin-top: 40px;
-}
-
-.slider-cycles-select__selects {
-	box-sizing: border-box;
-	position: absolute;
-	top: 80px;
-	left: 18px;
-	z-index: 100;
-	border: 1px solid #e3e3e3;
-	border-radius: 2px;
-	padding: 8px 12px;
-	background: none;
-	display: flex;
-	flex-direction: row;
-	gap: 42px;
-	align-items: center;
-}
-
-.slider-cycles-select__option {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 14px;
-	color: var(--clr-text-main);
-}
-
+@import "./modules/blocks/slider-cycles-select/__selects/slider-cycles-select__selects";
+@import "./modules/blocks/slider-cycles-select/__option/slider-cycles-select__option";
 @import "./modules/blocks/slider-cycles-select/__container/_closed/slider-cycles-select__container_closed";
 @import "./modules/blocks/slider-cycles-select/__container/_opened/slider-cycles-select__container_opened";
 @import "./modules/blocks/slider-cycles-select/__container/_type/slider-cycles-select__container_type_shosse";
