@@ -32,6 +32,27 @@ const swiperCycles = new Swiper(".slider-cycles", {
 	slidesPerView: 1,
 });
 
+const sliderSelectShosse = new Swiper(".slider-bicycles-select_type_shosse", {
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	slidesPerView: 1,
+});
+
+const sliderSelectGrevel = new Swiper(".slider-bicycles-select_type_grevel", {
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	slidesPerView: 1,
+});
+
+const sliderSelectTt = new Swiper(".slider-bicycles-select_type_tt", {
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	slidesPerView: 1,
+});
+
 const formSubscription = document.querySelector(".footer__subscription-form");
 const emailInput = document.querySelector(".footer__subscription-email");
 
