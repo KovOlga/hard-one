@@ -11,6 +11,10 @@ function changeDarkMode() {
 
 switchBtn.addEventListener("change", changeDarkMode);
 
+// header
+
+// header
+
 const swiperTypes = new Swiper(".slider-types", {
 	loop: false,
 	navigation: {

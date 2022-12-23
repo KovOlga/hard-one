@@ -10,17 +10,19 @@
 // header
 @import "./modules/blocks/header/header";
 
-@import "./modules/blocks/header/__nav-links/header__nav-links.scss";
-@import "./modules/blocks/header/__nav-link/header__nav-link.scss";
+@import "./modules/blocks/header/__nav-links/header__nav-links";
+@import "./modules/blocks/header/__nav-link/header__nav-link";
 
-@import "./modules/blocks/header/__mobile-line-container/header__mobile-line-container.scss";
-@import "./modules/blocks/header/__mobile-lines/header__mobile-lines.scss";
-@import "./modules/blocks/header/__mobile-line/header__mobile-line.scss";
+@import "./modules/blocks/header/__mobile-line-container/header__mobile-line-container";
+@import "./modules/blocks/header/__mobile-lines/header__mobile-lines";
+@import "./modules/blocks/header/__mobile-line/header__mobile-line";
 
-@import "./modules/blocks/header/__mobile-close-container/header__mobile-close-container.scss";
-@import "./modules/blocks/header/__mobile-nav-links/header__mobile-nav-links.scss";
-@import "./modules/blocks/header/__mobile-nav-link/header__mobile-nav-link.scss";
-@import "./modules/blocks/header/__mobile-nav-mode-container/header__mobile-nav-mode-container.scss";
+@import "./modules/blocks/header/__mobile-close-container/header__mobile-close-container";
+@import "./modules/blocks/header/__mobile-close-button/header__mobile-close-button";
+@import "./modules/blocks/header/__mobile-close-icon/header__mobile-close-icon";
+@import "./modules/blocks/header/__mobile-nav-links/header__mobile-nav-links";
+@import "./modules/blocks/header/__mobile-nav-link/header__mobile-nav-link";
+@import "./modules/blocks/header/__mobile-nav-mode-container/header__mobile-nav-mode-container";
 
 //intro
 @import "./modules/blocks/intro/intro";
