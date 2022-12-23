@@ -112,8 +112,12 @@
   }
 }
 
-.header__mobile-lines {
+.header__mobile-lines-button {
   cursor: pointer;
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
