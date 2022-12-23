@@ -384,7 +384,7 @@
     width: 284px;
     padding-top: 40px;
     border-top: 1px solid #e3e3e3;
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
 }
 
@@ -549,6 +549,7 @@
 @media (max-width: 900px) {
   .slider-cycles__title {
     padding-left: 18px;
+    padding-top: 120px;
     font-size: 32px;
     line-height: 40px;
   }
@@ -635,14 +636,29 @@
     max-width: 320px;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-top: 40px;
   }
+}
+
+.slider-cycles-select__line-top {
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  position: absolute;
+  top: 80px;
+}
+
+.slider-cycles-select__line-bottom {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e3e3e3;
+  position: absolute;
+  bottom: 40px;
 }
 
 .slider-cycles-select__selects {
   box-sizing: border-box;
   position: absolute;
-  top: 80px;
+  top: 200px;
   left: 18px;
   z-index: 100;
   border: 1px solid #e3e3e3;
@@ -702,10 +718,8 @@
   .trainings {
     max-width: 284px;
     margin: 0 auto;
-    padding-top: 40px;
     padding-bottom: 60px;
     padding-left: 0;
-    border-top: 1px solid #e3e3e3;
     display: flex;
     flex-direction: column;
     gap: 40px;
