@@ -1,0 +1,10 @@
+.header__nav-link {
+	@include link;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.header__nav-link:hover {
+	opacity: 0.75;
+}

@@ -24,6 +24,50 @@
 					<a class="header__nav-link" href="#" target="_blank">Велосипеды</a>
 					<a class="header__nav-link" href="#" target="_blank">Тренировки</a>
 				</nav>
+				<div class="header__mobile-line-container">
+					<div class="header__mobile-lines">
+						<img class="header__mobile-line" src="./images/header-line.svg" />
+						<img class="header__mobile-line" src="./images/header-line.svg" />
+						<img class="header__mobile-line" src="./images/header-line.svg" />
+					</div>
+				</div>
+				<div class="header__mobile-container">
+					<div class="header__mobile-close-container">
+						<img
+							class="header__mobile-close-icon"
+							src="./images/header-close-icon.svg"
+						/>
+					</div>
+					<div class="header__mobile-nav-mode-container">
+						<nav class="header__mobile-nav-links">
+							<a class="header__mobile-nav-link" href="#" target="_blank"
+								>Покрытия и градиенты</a
+							>
+							<a class="header__mobile-nav-link" href="#" target="_blank"
+								>Велосипеды</a
+							>
+							<a class="header__mobile-nav-link" href="#" target="_blank"
+								>Тренировки</a
+							>
+						</nav>
+						<div class="mode mode_header">
+							<img
+								class="mode__icon mode__icon_theme_light"
+								src="./images/light-mode.svg"
+								alt="Иконка светлой темы"
+							/>
+							<label class="mode__label">
+								<input class="mode__checkbox" type="checkbox" name="toggle" />
+								<span class="mode__span-visible"></span>
+							</label>
+							<img
+								class="mode__icon mode__icon_theme_night"
+								src="./images/night-mode.svg"
+								alt="Иконка темной темы"
+							/>
+						</div>
+					</div>
+				</div>
 			</header>
 			<main class="content">
 				<section class="intro">
@@ -562,7 +606,7 @@
 				</form>
 				<div class="footer__copyright-mode-container">
 					<p class="footer__copyright">© Road Club 2021</p>
-					<div class="mode">
+					<div class="mode mode_footer">
 						<img
 							class="mode__icon mode__icon_theme_light"
 							src="./images/light-mode.svg"

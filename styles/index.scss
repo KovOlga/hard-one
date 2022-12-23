@@ -7,6 +7,21 @@
 @import "./modules/blocks/page/page";
 @import "./modules/blocks/content/content";
 
+// header
+@import "./modules/blocks/header/header";
+
+@import "./modules/blocks/header/__nav-links/header__nav-links.scss";
+@import "./modules/blocks/header/__nav-link/header__nav-link.scss";
+
+@import "./modules/blocks/header/__mobile-line-container/header__mobile-line-container.scss";
+@import "./modules/blocks/header/__mobile-lines/header__mobile-lines.scss";
+@import "./modules/blocks/header/__mobile-line/header__mobile-line.scss";
+
+@import "./modules/blocks/header/__mobile-close-container/header__mobile-close-container.scss";
+@import "./modules/blocks/header/__mobile-nav-links/header__mobile-nav-links.scss";
+@import "./modules/blocks/header/__mobile-nav-link/header__mobile-nav-link.scss";
+@import "./modules/blocks/header/__mobile-nav-mode-container/header__mobile-nav-mode-container.scss";
+
 //intro
 @import "./modules/blocks/intro/intro";
 @import "./modules/blocks/intro/__title/intro__title";
@@ -87,38 +102,11 @@
 
 // mode
 @import "./modules/blocks/mode/mode";
+@import "./modules/blocks/mode/_footer/mode_footer";
 @import "./modules/blocks/mode/__icon/mode__icon";
 @import "./modules/blocks/mode/__label/mode__label";
 @import "./modules/blocks/mode/__checkbox/mode__checkbox";
 @import "./modules/blocks/mode/__span-visible/mode__span-visible";
-
-// header
-
-.header {
-	background-color: var(--clr-body);
-	position: sticky;
-	top: 0;
-	z-index: 100;
-}
-
-.header__nav-links {
-	padding: 28px 120px;
-	display: flex;
-	flex-direction: row;
-	gap: 34px;
-	justify-content: flex-end;
-}
-
-.header__nav-link {
-	@include link;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 18px;
-}
-
-.header__nav-link:hover {
-	opacity: 0.75;
-}
 
 // .swiper-pagination
 

@@ -1,0 +1,5 @@
+.mode_footer {
+	@include desktop {
+		display: none;
+	}
+}

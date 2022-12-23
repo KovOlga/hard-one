@@ -1,0 +1,11 @@
+.header__nav-links {
+	padding: 28px 120px;
+	display: flex;
+	flex-direction: row;
+	gap: 34px;
+	justify-content: flex-end;
+
+	@include desktop {
+		display: none;
+	}
+}

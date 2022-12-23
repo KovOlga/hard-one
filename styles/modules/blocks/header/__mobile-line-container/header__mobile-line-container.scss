@@ -1,0 +1,15 @@
+.header__mobile-line-container {
+	display: none;
+
+	@include desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+		box-sizing: border-box;
+		padding-top: 25px;
+		padding-right: 18px;
+		padding-bottom: 30px;
+		width: 100%;
+	}
+}
