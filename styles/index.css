@@ -46,7 +46,6 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  outline: green solid 1px;
 }
 
 .content {
@@ -95,6 +94,22 @@
   opacity: 0.75;
 }
 
+.header__mobile-container {
+  background-color: var(--clr-body);
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s linear;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__mobile-container_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
 .header__mobile-line-container {
   display: none;
 }
@@ -109,6 +124,7 @@
     padding-right: 18px;
     padding-bottom: 30px;
     width: 100%;
+    position: relative;
   }
 }
 
