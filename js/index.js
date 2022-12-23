@@ -37,6 +37,7 @@ const sliderSelectShosse = new Swiper(
 	{
 		pagination: {
 			el: ".slider-cycles-select__pagination",
+			type: "bullet",
 		},
 		slidesPerView: 1,
 	}
@@ -47,6 +48,7 @@ const sliderSelectGrevel = new Swiper(
 	{
 		pagination: {
 			el: ".slider-cycles-select__pagination",
+			type: "bullet",
 		},
 		slidesPerView: 1,
 	}
@@ -55,6 +57,7 @@ const sliderSelectGrevel = new Swiper(
 const sliderSelectTt = new Swiper(".slider-cycles-select__container_type_tt", {
 	pagination: {
 		el: ".slider-cycles-select__pagination",
+		type: "bullet",
 	},
 	slidesPerView: 1,
 });

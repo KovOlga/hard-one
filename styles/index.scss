@@ -131,6 +131,11 @@
 	text-align: right;
 	// bottom: 754px;
 	bottom: 81%;
+
+	@include desktop {
+		text-align: center;
+		bottom: 120px;
+	}
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -139,6 +144,10 @@
 	position: relative;
 	margin: 0 20px;
 	z-index: 100;
+
+	@include desktop {
+		margin: 0 5px;
+	}
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -158,6 +167,12 @@
 	transition: opacity 0.4s linear;
 	background: inherit;
 	color: var(--clr-text-gray-rest);
+
+	@include desktop {
+		width: 4px;
+		aspect-ratio: 1;
+		background-color: #cacaca;
+	}
 }
 
 .swiper-pagination-bullet:hover {
