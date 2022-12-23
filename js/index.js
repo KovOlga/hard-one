@@ -36,7 +36,7 @@ const sliderSelectShosse = new Swiper(
 	".slider-cycles-select__container_type_shosse",
 	{
 		pagination: {
-			el: ".swiper-pagination",
+			el: ".slider-cycles-select__pagination",
 		},
 		slidesPerView: 1,
 	}
@@ -46,7 +46,7 @@ const sliderSelectGrevel = new Swiper(
 	".slider-cycles-select__container_type_grevel",
 	{
 		pagination: {
-			el: ".swiper-pagination",
+			el: ".slider-cycles-select__pagination",
 		},
 		slidesPerView: 1,
 	}
@@ -54,10 +54,52 @@ const sliderSelectGrevel = new Swiper(
 
 const sliderSelectTt = new Swiper(".slider-cycles-select__container_type_tt", {
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".slider-cycles-select__pagination",
 	},
 	slidesPerView: 1,
 });
+
+const typeSelect = document.querySelector(".slider-cycles-select__selects");
+
+const typeShosse = document.querySelector(
+	".slider-cycles-select__container_type_shosse"
+);
+const typeGrevel = document.querySelector(
+	".slider-cycles-select__container_type_grevel"
+);
+const typeTt = document.querySelector(
+	".slider-cycles-select__container_type_tt"
+);
+
+function closeSlider(elementOne, elementTwo) {
+	elementOne.classList.add("slider-cycles-select__container_closed");
+	elementTwo.classList.add("slider-cycles-select__container_closed");
+	elementOne.classList.remove("slider-cycles-select__container_opened");
+	elementTwo.classList.remove("slider-cycles-select__container_opened");
+}
+
+function openSlider(element) {
+	element.classList.remove("slider-cycles-select__container_closed");
+	element.classList.add("slider-cycles-select__container_opened");
+}
+
+function updateSlider() {
+	if (typeSelect.value === "grevel") {
+		console.log(typeSelect.value);
+		closeSlider(typeShosse, typeTt);
+		openSlider(typeGrevel);
+	} else if (typeSelect.value === "tt") {
+		console.log(typeSelect.value);
+		closeSlider(typeShosse, typeGrevel);
+		openSlider(typeTt);
+	} else if (typeSelect.value === "shosse") {
+		console.log(typeSelect.value);
+		closeSlider(typeGrevel, typeTt);
+		openSlider(typeShosse);
+	}
+}
+
+typeSelect.addEventListener("change", updateSlider);
 
 const formSubscription = document.querySelector(".footer__subscription-form");
 const emailInput = document.querySelector(".footer__subscription-email");

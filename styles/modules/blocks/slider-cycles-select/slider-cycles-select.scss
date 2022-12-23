@@ -1,0 +1,8 @@
+.slider-cycles-select {
+	display: none;
+
+	@include desktop {
+		display: block;
+		position: relative;
+	}
+}

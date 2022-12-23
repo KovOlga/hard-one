@@ -313,13 +313,29 @@
 						<div class="swiper-pagination"></div>
 					</div>
 					<div class="slider-cycles-select">
-						<select class="slider-cycles-select__types">
-							<option class="slider-cycles-select__option">Шоссе</option>
-							<option class="slider-cycles-select__option">Грэвел</option>
-							<option class="slider-cycles-select__option">ТТ</option>
+						<select class="slider-cycles-select__selects">
+							<option
+								class="slider-cycles-select__option slider-cycles-select__option_type_shosse"
+								selected
+								value="shosse"
+							>
+								Шоссе
+							</option>
+							<option
+								class="slider-cycles-select__option slider-cycles-select__option_type_grevel"
+								value="grevel"
+							>
+								Грэвел
+							</option>
+							<option
+								class="slider-cycles-select__option slider-cycles-select__option_type_tt"
+								value="tt"
+							>
+								ТТ
+							</option>
 						</select>
 						<div
-							class="swiper slider-cycles-select__container slider-cycles-select__container_type_shosse"
+							class="swiper slider-cycles-select__container slider-cycles-select__container_type_shosse slider-cycles-select__container_opened"
 						>
 							<h2 class="slider-cycles__title">Велосипеды</h2>
 							<div class="swiper-wrapper">
@@ -372,11 +388,13 @@
 									</div>
 								</figure>
 							</div>
-							<div class="swiper-pagination"></div>
+							<div
+								class="swiper-pagination slider-cycles-select__pagination"
+							></div>
 						</div>
 
 						<div
-							class="swiper slider-cycles-select__container slider-cycles-select__container_type_grevel"
+							class="swiper slider-cycles-select__container slider-cycles-select__container_type_grevel slider-cycles-select__container_closed"
 						>
 							<h2 class="slider-cycles__title">Велосипеды</h2>
 							<div class="swiper-wrapper">
@@ -429,11 +447,13 @@
 									</div>
 								</figure>
 							</div>
-							<div class="swiper-pagination"></div>
+							<div
+								class="swiper-pagination slider-cycles-select__pagination"
+							></div>
 						</div>
 
 						<div
-							class="swiper slider-cycles-select__container slider-cycles-select__container_type_tt"
+							class="swiper slider-cycles-select__container slider-cycles-select__container_type_tt slider-cycles-select__container_closed"
 						>
 							<h2 class="slider-cycles__title">Велосипеды</h2>
 							<div class="swiper-wrapper">
@@ -486,7 +506,9 @@
 									</div>
 								</figure>
 							</div>
-							<div class="swiper-pagination"></div>
+							<div
+								class="swiper-pagination slider-cycles-select__pagination"
+							></div>
 						</div>
 					</div>
 				</section>
