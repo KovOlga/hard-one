@@ -10,7 +10,7 @@ const swiperTypes = new Swiper(".slider-types", {
 const menu = ["Шоссе", "Грэвел", "ТТ"];
 const swiperCycles = new Swiper(".slider-cycles", {
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".slider-cycles__swiper-pagination",
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<span class="' + className + '">' + menu[index] + "</span>";
@@ -24,7 +24,8 @@ const sliderSelectShosse = new Swiper(
 	{
 		pagination: {
 			el: ".slider-cycles-select__pagination",
-			type: "bullet",
+			type: "bullets",
+			clickable: true,
 		},
 		slidesPerView: 1,
 	}
@@ -35,7 +36,8 @@ const sliderSelectGrevel = new Swiper(
 	{
 		pagination: {
 			el: ".slider-cycles-select__pagination",
-			type: "bullet",
+			type: "bullets",
+			clickable: true,
 		},
 		slidesPerView: 1,
 	}
@@ -44,7 +46,8 @@ const sliderSelectGrevel = new Swiper(
 const sliderSelectTt = new Swiper(".slider-cycles-select__container_type_tt", {
 	pagination: {
 		el: ".slider-cycles-select__pagination",
-		type: "bullet",
+		type: "bullets",
+		clickable: true,
 	},
 	slidesPerView: 1,
 });

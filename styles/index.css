@@ -857,6 +857,96 @@
   height: 100%;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  box-sizing: border-box;
+  padding-right: 120px;
+  text-align: right;
+  bottom: 81%;
+}
+@media (max-width: 900px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    padding-right: 0;
+    text-align: center;
+    bottom: 120px;
+  }
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  position: relative;
+  margin: 0 20px;
+  z-index: 100;
+}
+@media (max-width: 900px) {
+  .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 3px;
+  }
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-of-type {
+  margin-right: 0;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  transition: opacity 0.4s linear;
+  background: inherit;
+  color: var(--clr-text-gray-rest);
+}
+@media (max-width: 900px) {
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    opacity: 1;
+    width: 4px;
+    aspect-ratio: 1;
+    background-color: #cacaca;
+  }
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  .swiper-pagination-bullet:hover {
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  color: var(--clr-text-main);
+}
+@media (max-width: 900px) {
+  .swiper-pagination-bullet-active {
+    background-color: #151515;
+  }
+}
+
+.swiper-pagination-bullet-active:hover {
+  opacity: 0.75;
+}
+@media (max-width: 900px) {
+  .swiper-pagination-bullet-active:hover {
+    opacity: 1;
+  }
+}
+
 .trainings {
   box-sizing: border-box;
   padding-left: 120px;
@@ -1179,76 +1269,4 @@
 
 .mode__checkbox:checked + .mode__span-visible::before {
   transform: translateX(20px);
-}
-
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  box-sizing: border-box;
-  padding-right: 120px;
-  text-align: right;
-  bottom: 81%;
-}
-@media (max-width: 900px) {
-  .swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    text-align: center;
-    bottom: 120px;
-  }
-}
-
-.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  position: relative;
-  margin: 0 20px;
-  z-index: 100;
-}
-@media (max-width: 900px) {
-  .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 5px;
-  }
-}
-
-.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-of-type {
-  margin-right: 0;
-}
-
-.swiper-pagination-bullet {
-  border-radius: 0;
-  width: auto;
-  height: auto;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  opacity: 0.7;
-  transition: opacity 0.4s linear;
-  background: inherit;
-  color: var(--clr-text-gray-rest);
-}
-@media (max-width: 900px) {
-  .swiper-pagination-bullet {
-    width: 4px;
-    aspect-ratio: 1;
-    background-color: #cacaca;
-  }
-}
-
-.swiper-pagination-bullet:hover {
-  opacity: 0.6;
-}
-
-.swiper-pagination-bullet-active {
-  font-weight: 600;
-  opacity: 1;
-  transition: opacity 0.4s linear;
-  color: var(--clr-text-main);
-}
-
-.swiper-pagination-bullet-active:hover {
-  opacity: 0.75;
 }/*# sourceMappingURL=index.css.map */
