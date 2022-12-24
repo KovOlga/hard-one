@@ -1,14 +1,17 @@
-// const userDarkMode = localStorage.getItem("darkMode");
-const switchBtn = document.querySelector(".mode__checkbox");
+const switchBtnArr = document.querySelectorAll(".mode__checkbox");
 const formSubscription = document.querySelector(".footer__subscription-form");
 const emailInput = document.querySelector(".footer__subscription-email");
 
-function changeDarkMode() {
-	if (switchBtn.checked) {
+function changeDarkMode(item) {
+	if (item.checked) {
 		document.body.classList.add("darkMode");
 	} else {
 		document.body.classList.remove("darkMode");
 	}
+}
+
+function listenDarkMode(item) {
+	item.addEventListener("change", () => changeDarkMode(item));
 }
 
 function writeCool() {
@@ -20,5 +23,6 @@ function submitSubscription(evt) {
 	writeCool();
 }
 
-switchBtn.addEventListener("change", changeDarkMode);
+switchBtnArr.forEach(listenDarkMode);
+
 formSubscription.addEventListener("submit", submitSubscription);
