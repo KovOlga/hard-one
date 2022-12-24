@@ -1,0 +1,10 @@
+.slider-types__image {
+	display: block;
+	width: 100%;
+}
+
+.slider-types__image:last-of-type {
+	@include desktop {
+		display: none;
+	}
+}

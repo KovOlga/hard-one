@@ -1,0 +1,15 @@
+.header__mobile-container {
+	background-color: var(--clr-body);
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s linear;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+}
+
+.header__mobile-container_opened {
+	visibility: visible;
+	opacity: 1;
+}

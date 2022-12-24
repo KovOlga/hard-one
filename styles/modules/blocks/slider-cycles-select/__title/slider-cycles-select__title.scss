@@ -1,0 +1,17 @@
+.slider-cycles-select__title {
+	@include textReset;
+	box-sizing: border-box;
+	padding-left: 120px;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 60px;
+	letter-spacing: -0.5px;
+	color: var(--clr-text-main);
+
+	@include desktop {
+		padding-left: 18px;
+		padding-top: 120px;
+		font-size: 32px;
+		line-height: 40px;
+	}
+}

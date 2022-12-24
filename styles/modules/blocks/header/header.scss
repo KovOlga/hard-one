@@ -1,0 +1,11 @@
+.header {
+	background-color: var(--clr-body);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	@include desktop {
+		width: 320px;
+		margin: 0 auto;
+	}
+}

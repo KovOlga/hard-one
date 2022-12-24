@@ -1,0 +1,27 @@
+.trainings {
+	box-sizing: border-box;
+	padding-left: 120px;
+	padding-bottom: 120px;
+	display: grid;
+	grid-template-columns: minmax(250px, 460px) minmax(10px, 160px) minmax(
+			400px,
+			580px
+		);
+	grid-template-rows: auto 50px auto 182px auto;
+	grid-template-areas:
+		"title . img"
+		". . img"
+		"description . img"
+		". . img"
+		"apps . img";
+
+	@include desktop {
+		max-width: 284px;
+		margin: 0 auto;
+		padding-bottom: 60px;
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+}

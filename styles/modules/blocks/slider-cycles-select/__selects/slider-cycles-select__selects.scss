@@ -1,0 +1,23 @@
+.slider-cycles-select__selects {
+	box-sizing: border-box;
+	position: absolute;
+	top: 200px;
+	left: 18px;
+	z-index: 100;
+	border: 1px solid #e3e3e3;
+	border-radius: 2px;
+	padding: 8px 12px;
+	background: none;
+	display: flex;
+	flex-direction: row;
+	gap: 42px;
+	align-items: center;
+	color: var(--clr-text-main);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 14px;
+
+	@include desktop {
+		color: #151515;
+	}
+}
