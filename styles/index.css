@@ -67,6 +67,7 @@
 }
 
 .header__nav-links {
+  background-color: var(--clr-body);
   padding: 28px 120px;
   display: flex;
   flex-direction: row;
@@ -115,6 +116,7 @@
 }
 @media (max-width: 900px) {
   .header__mobile-line-container {
+    background-color: var(--clr-body);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
