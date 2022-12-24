@@ -849,6 +849,11 @@
   font-size: 11px;
   line-height: 14px;
 }
+@media (max-width: 900px) {
+  .slider-cycles-select__selects {
+    color: #151515;
+  }
+}
 
 .slider-cycles-select__container_closed {
   opacity: 0;
