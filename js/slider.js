@@ -78,15 +78,12 @@ function openSlider(element) {
 
 function updateSlider() {
 	if (typeSelect.value === "grevel") {
-		console.log(typeSelect.value);
 		closeSlider(typeShosse, typeTt);
 		openSlider(typeGrevel);
 	} else if (typeSelect.value === "tt") {
-		console.log(typeSelect.value);
 		closeSlider(typeShosse, typeGrevel);
 		openSlider(typeTt);
 	} else if (typeSelect.value === "shosse") {
-		console.log(typeSelect.value);
 		closeSlider(typeGrevel, typeTt);
 		openSlider(typeShosse);
 	}
