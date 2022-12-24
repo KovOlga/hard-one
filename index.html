@@ -25,13 +25,22 @@
 					<a class="header__nav-link" href="#" target="_blank">Тренировки</a>
 				</nav>
 				<div class="header__mobile-line-container">
-					<button
-						aria-controls="header__mobile-container"
-						class="header__mobile-lines-button"
-					>
-						<img class="header__mobile-line" src="./images/header-line.svg" />
-						<img class="header__mobile-line" src="./images/header-line.svg" />
-						<img class="header__mobile-line" src="./images/header-line.svg" />
+					<button class="header__mobile-lines-button">
+						<img
+							class="header__mobile-line"
+							src="./images/header-line.svg"
+							alt="линия кнопки открытия бургерного меню"
+						/>
+						<img
+							class="header__mobile-line"
+							src="./images/header-line.svg"
+							alt="линия кнопки открытия бургерного меню"
+						/>
+						<img
+							class="header__mobile-line"
+							src="./images/header-line.svg"
+							alt="линия кнопки открытия бургерного меню"
+						/>
 					</button>
 				</div>
 				<div class="header__mobile-container">
@@ -40,6 +49,7 @@
 							<img
 								class="header__mobile-close-icon"
 								src="./images/header-close-icon.svg"
+								alt="иконка закрытия меню"
 							/>
 						</button>
 					</div>
@@ -619,8 +629,13 @@
 							src="./images/light-mode.svg"
 							alt="Иконка светлой темы"
 						/>
-						<label class="mode__label">
-							<input class="mode__checkbox" type="checkbox" name="toggle" />
+						<label class="mode__label" for="modeCheckbox">
+							<input
+								id="modeCheckbox"
+								class="mode__checkbox"
+								type="checkbox"
+								name="toggle"
+							/>
 							<span class="mode__span-visible"></span>
 						</label>
 						<img
