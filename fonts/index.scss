@@ -1,7 +1,7 @@
-@import "../vendor/normalize.css";
-@import "../vendor/fonts.css";
-@import "./modules/variables.scss";
-@import "./modules/mixins.scss";
+@import "../vendor/normalize";
+@import "../vendor/fonts";
+@import "./modules/variables";
+@import "./modules/mixins";
 
 @import "./modules/blocks/body/body";
 @import "./modules/blocks/page/page";
@@ -14,6 +14,7 @@
 @import "./modules/blocks/header/__nav-link/header__nav-link";
 
 @import "./modules/blocks/header/__mobile-container/header__mobile-container";
+@import "./modules/blocks/header/__mobile-container/_opened/header__mobile-container_opened";
 @import "./modules/blocks/header/__mobile-line-container/header__mobile-line-container";
 @import "./modules/blocks/header/__mobile-lines-button/header__mobile-lines-button";
 
@@ -60,9 +61,9 @@
 @import "./modules/blocks/slider-types/__pulse/slider-types__pulse";
 
 // swiper-navigation
-@import "./modules/blocks/swiper/__switch-btn/swiper__switch-btn";
-@import "./modules/blocks/swiper/__switch-btn/_intro/swiper__switch-btn_intro_next";
-@import "./modules/blocks/swiper/__switch-btn/_intro/swiper__switch-btn_intro_prev";
+@import "./modules/swiper/__switch-btn/swiper__switch-btn";
+@import "./modules/swiper/__switch-btn/_intro/swiper__switch-btn_intro_next";
+@import "./modules/swiper/__switch-btn/_intro/swiper__switch-btn_intro_prev";
 
 // .slider-cycles
 @import "./modules/blocks/slider-cycles/slider-cycles";
@@ -86,7 +87,7 @@
 @import "./modules/blocks/slider-cycles-select/__container/_type/slider-cycles-select__container_type_tt";
 
 // .swiper-pagination
-@import "./modules/blocks/swiper/pagination/swiper__pagination";
+@import "./modules/swiper/pagination/swiper__pagination";
 
 // trainings
 @import "./modules/blocks/trainings/trainings";
