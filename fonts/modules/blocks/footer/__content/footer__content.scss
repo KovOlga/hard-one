@@ -1,0 +1,20 @@
+.footer__content {
+	box-sizing: border-box;
+	min-width: 320px;
+	max-width: 1440px;
+	@include mainPadLeft;
+	background-color: var(--clr-footer);
+	display: flex;
+	flex-direction: column;
+	padding-right: 120px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+
+	@include desktop {
+		padding-left: 18px;
+		padding-right: 18px;
+		padding-top: 60px;
+		padding-bottom: 16px;
+	}
+}
