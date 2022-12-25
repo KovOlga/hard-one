@@ -108,11 +108,11 @@
 
 .header__mobile-container {
   background-color: var(--clr-body);
-  width: 100%;
+  width: 320px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s linear;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }
