@@ -1,7 +1,9 @@
 .header__mobile-line-container {
 	display: none;
+}
 
-	@include desktop {
+@media (max-width: 400px) {
+	.header__mobile-line-container {
 		background-color: var(--clr-body);
 		display: flex;
 		flex-direction: column;

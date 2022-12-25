@@ -7,6 +7,14 @@
 	justify-content: flex-end;
 
 	@include desktop {
+		padding: 20px 20px;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header__nav-links {
+		padding: 28px 120px;
 		display: none;
 	}
 }
