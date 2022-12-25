@@ -1139,9 +1139,11 @@
   padding: 0;
   color: var(--clr-text-main);
   margin-bottom: 50px;
+  width: 229px;
 }
 @media (max-width: 900px) {
   .footer__subscription-title {
+    width: 100%;
     margin-bottom: 40px;
   }
 }
