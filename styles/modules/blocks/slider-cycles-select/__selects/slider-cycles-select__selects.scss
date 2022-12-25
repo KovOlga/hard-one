@@ -1,7 +1,7 @@
 .slider-cycles-select__selects {
 	box-sizing: border-box;
 	position: absolute;
-	top: 200px;
+	top: 120px;
 	left: 18px;
 	z-index: 100;
 	border: 1px solid #e3e3e3;
@@ -19,5 +19,6 @@
 
 	@include desktop {
 		color: #151515;
+		width: 114px;
 	}
 }
