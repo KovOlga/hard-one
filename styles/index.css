@@ -142,19 +142,17 @@
   }
 }
 .header__mobile-lines-button {
+  width: 22px;
+  height: 19px;
   cursor: pointer;
   border: none;
   background-color: inherit;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.header__mobile-line {
-  width: 22px;
-  height: 3px;
+  background-image: url("../images/burger-menu-svgrepo-com.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__mobile-close-container {
