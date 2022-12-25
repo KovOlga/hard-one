@@ -9,6 +9,8 @@
   --clr-text-copyright: #cfcfcf;
   --clr-line: #d7d4d4;
   --clr-slider-arrows: #ebebeb;
+  --background-slider-arrow-prev: url("../images/navigation-prev.svg");
+  --background-slider-arrow-next: url("../images/navigation-next.svg");
   --border-subscription: 1px solid rgba(199, 199, 199, 0.5);
   --clr-subscription-placeholder: #222222;
   --outline-subscription-focus: 1px solid #c7c7c7;
@@ -23,6 +25,8 @@
   --clr-text-copyright: #565656;
   --clr-line: #707070;
   --clr-slider-arrows: #434343;
+  --background-slider-arrow-prev: url("../images/arrow-dark.svg");
+  --background-slider-arrow-next: url("../images/arrow-dark-next.svg");
   --clr-subscription-placeholder: #ffffff;
   --border-subscription-input: 1px solid rgba(125, 125, 125, 0.5);
   --outline-subscription-focus: 1px solid #7d7d7d;
@@ -689,7 +693,7 @@
 
 .swiper__switch-btn_intro_next {
   left: 190px;
-  background-image: url("../images/navigation-next.svg");
+  background-image: var(--background-slider-arrow-next);
 }
 @media (max-width: 900px) {
   .swiper__switch-btn_intro_next {
@@ -699,7 +703,7 @@
 
 .swiper__switch-btn_intro_prev {
   left: 120px;
-  background-image: url("../images/navigation-prev.svg");
+  background-image: var(--background-slider-arrow-prev);
 }
 @media (max-width: 900px) {
   .swiper__switch-btn_intro_prev {
