@@ -8,4 +8,11 @@
 	position: fixed;
 	top: 0;
 	z-index: 1000;
+	display: none;
+}
+
+@media (max-width: 400px) {
+	.header__mobile-container {
+		display: block;
+	}
 }

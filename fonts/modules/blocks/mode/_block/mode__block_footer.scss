@@ -1,5 +1,5 @@
-.mode__block_footer {
-	@include desktop {
+@media (max-width: 400px) {
+	.mode__block_footer {
 		display: none;
 	}
 }

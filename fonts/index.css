@@ -445,8 +445,14 @@ template {
   position: fixed;
   top: 0;
   z-index: 1000;
+  display: none;
 }
 
+@media (max-width: 400px) {
+  .header__mobile-container {
+    display: block;
+  }
+}
 .header__mobile-container_opened {
   visibility: visible;
   opacity: 1;
@@ -1623,12 +1629,12 @@ template {
 .footer__logo {
   display: none;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 400px) {
   .footer__logo {
     display: block;
   }
 }
-
 .mode {
   display: flex;
   flex-direction: row;
@@ -1636,12 +1642,11 @@ template {
   gap: 22px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 400px) {
   .mode__block_footer {
     display: none;
   }
 }
-
 .mode__icon {
   display: block;
 }
