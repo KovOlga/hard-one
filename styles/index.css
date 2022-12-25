@@ -896,6 +896,7 @@
 @media (max-width: 900px) {
   .slider-cycles-select__selects {
     color: #151515;
+    width: 114px;
   }
 }
 
