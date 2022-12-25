@@ -1296,7 +1296,7 @@
 }
 
 @media (max-width: 900px) {
-  .mode_footer {
+  .mode__block_footer {
     display: none;
   }
 }
