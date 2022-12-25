@@ -5,6 +5,13 @@
 	transition: all 0.4s linear;
 	background-color: #ffffff;
 	border-radius: 50px;
+	opacity: 1;
+	transition: opacity 0.4s linear;
+	cursor: pointer;
+}
+
+.mode__span-visible:hover {
+	opacity: 0.7;
 }
 
 .mode__span-visible::before {

@@ -10,6 +10,8 @@
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
+	opacity: 1;
+	transition: opacity 0.4s linear;
 
 	@include desktop {
 		padding-top: 90px;
@@ -17,4 +19,8 @@
 		padding-left: 18px;
 		padding-right: 18px;
 	}
+}
+
+.cycle-item:hover {
+	opacity: 0.8;
 }

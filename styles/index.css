@@ -774,6 +774,8 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
+  opacity: 1;
+  transition: opacity 0.4s linear;
 }
 @media (max-width: 900px) {
   .cycle-item {
@@ -782,6 +784,10 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+}
+
+.cycle-item:hover {
+  opacity: 0.8;
 }
 
 .cycle-item__image-container {
@@ -1319,6 +1325,13 @@
   transition: all 0.4s linear;
   background-color: #ffffff;
   border-radius: 50px;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  cursor: pointer;
+}
+
+.mode__span-visible:hover {
+  opacity: 0.7;
 }
 
 .mode__span-visible::before {
