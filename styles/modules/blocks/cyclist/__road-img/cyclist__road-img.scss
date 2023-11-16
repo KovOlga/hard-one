@@ -1,0 +1,9 @@
+.cyclist__road-img {
+	display: block;
+	max-width: 650px;
+	object-fit: contain;
+
+	@include desktop {
+		max-width: 100%;
+	}
+}

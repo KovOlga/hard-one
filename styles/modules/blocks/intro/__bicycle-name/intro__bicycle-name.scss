@@ -1,0 +1,7 @@
+.intro__bicycle-name {
+	@include textReset;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	color: var(--clr-text-main);
+}

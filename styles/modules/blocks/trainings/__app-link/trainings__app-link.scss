@@ -1,0 +1,15 @@
+.trainings__app-link {
+	@include link;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+
+	@include desktop {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.trainings__app-link:hover {
+	opacity: 0.75;
+}

@@ -1,0 +1,14 @@
+.cyclist__quote {
+	@include textReset;
+	max-width: 470px;
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 44px;
+	letter-spacing: -0.5px;
+	color: var(--clr-text-main);
+
+	@include desktop {
+		font-size: 23px;
+		line-height: 29px;
+	}
+}

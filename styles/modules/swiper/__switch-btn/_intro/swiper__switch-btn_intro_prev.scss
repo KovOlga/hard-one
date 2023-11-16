@@ -1,0 +1,8 @@
+.swiper__switch-btn_intro_prev {
+	left: 120px;
+	background-image: var(--background-slider-arrow-prev);
+
+	@include desktop {
+		left: 226px;
+	}
+}

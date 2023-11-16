@@ -1,0 +1,20 @@
+.footer__subscription-ok {
+	@include subscriptionFont;
+	color: var(--clr-text-main);
+	border: none;
+	outline: none;
+	background: inherit;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.4s linear;
+	position: absolute;
+	z-index: 500;
+	top: 11px;
+	right: 22px;
+}
+
+.footer__subscription-email:focus + .footer__subscription-ok {
+	opacity: 1;
+}

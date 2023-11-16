@@ -1,0 +1,26 @@
+.cycle-item {
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	cursor: pointer;
+	box-sizing: border-box;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	opacity: 1;
+	transition: opacity 0.4s linear;
+
+	@include desktop {
+		padding-top: 90px;
+		padding-bottom: 104px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+}
+
+.cycle-item:hover {
+	opacity: 0.8;
+}

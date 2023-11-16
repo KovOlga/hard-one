@@ -1,0 +1,13 @@
+.trainings__img {
+	display: block;
+	grid-area: img;
+	height: 0;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+
+	@include desktop {
+		min-height: 225px;
+	}
+}

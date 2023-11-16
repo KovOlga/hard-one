@@ -1,0 +1,15 @@
+.slider-types__text {
+	@include textReset;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	width: 460px;
+	opacity: 0.7;
+	color: var(--clr-text-gray-rest);
+
+	@include desktop {
+		width: 100%;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}

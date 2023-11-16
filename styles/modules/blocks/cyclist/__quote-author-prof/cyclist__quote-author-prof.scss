@@ -1,0 +1,13 @@
+.cyclist__quote-author-prof {
+	@include textReset;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: var(--clr-text-gray-rest);
+	opacity: 0.7;
+
+	@include desktop {
+		font-size: 10px;
+		line-height: 16px;
+	}
+}

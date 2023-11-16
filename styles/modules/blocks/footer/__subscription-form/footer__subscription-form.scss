@@ -1,0 +1,16 @@
+.footer__subscription-form {
+	width: 360px;
+	box-sizing: border-box;
+	padding: 11px 20px;
+	position: relative;
+	border: var(--border-subscription);
+	border-radius: 4px;
+
+	@include desktop {
+		max-width: 100%;
+	}
+}
+
+.footer__subscription-form:focus-within {
+	outline: var(--outline-subscription-focus);
+}

@@ -1,0 +1,12 @@
+.cyclist__quote-author {
+	@include textReset;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	color: var(--clr-text-main);
+
+	@include desktop {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}

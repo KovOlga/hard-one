@@ -1,0 +1,35 @@
+$fontFamily: "Inter", Arial, sans-serif;
+
+$btnColor: #24b47e;
+
+:root {
+	--clr-body: #f4f4f4;
+	--clr-footer: #efefef;
+	--clr-text-main: #151515;
+	--clr-text-gray-intro: #222222;
+	--clr-text-gray-rest: #222222;
+	--clr-text-copyright: #cfcfcf;
+	--clr-line: #d7d4d4;
+	--clr-slider-arrows: #ebebeb;
+	--background-slider-arrow-prev: url("../images/navigation-prev.svg");
+	--background-slider-arrow-next: url("../images/navigation-next.svg");
+	--border-subscription: 1px solid rgba(199, 199, 199, 0.5);
+	--clr-subscription-placeholder: #222222;
+	--outline-subscription-focus: 1px solid #c7c7c7;
+}
+
+.darkMode {
+	--clr-body: #333333;
+	--clr-footer: #2f2f2f;
+	--clr-text-main: #ffffff;
+	--clr-text-gray-intro: #e6e6e6;
+	--clr-text-gray-rest: #e5e5e5;
+	--clr-text-copyright: #565656;
+	--clr-line: #707070;
+	--clr-slider-arrows: #434343;
+	--background-slider-arrow-prev: url("../images/arrow-dark.svg");
+	--background-slider-arrow-next: url("../images/arrow-dark-next.svg");
+	--clr-subscription-placeholder: #ffffff;
+	--border-subscription-input: 1px solid rgba(125, 125, 125, 0.5);
+	--outline-subscription-focus: 1px solid #7d7d7d;
+}

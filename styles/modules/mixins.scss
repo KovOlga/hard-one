@@ -1,0 +1,44 @@
+@mixin textReset {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin link {
+	cursor: pointer;
+	color: var(--clr-text-main);
+	text-decoration: none;
+	opacity: 1;
+	transition: opacity 0.4s linear;
+}
+
+@mixin subscriptionFont {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 28px;
+}
+
+@mixin desktop {
+	@media (max-width: 900px) {
+		@content;
+	}
+}
+
+@mixin mainPadLeft {
+	padding-left: 120px;
+}
+
+@mixin flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin icon-image($name, $width, $height) {
+	.icon-#{$name} {
+		background-image: url();
+		background-size: cover;
+		width: $width;
+		height: $height;
+	}
+}

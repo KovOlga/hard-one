@@ -1,0 +1,30 @@
+.swiper__switch-btn {
+	padding: 0;
+	margin: 0;
+	border: none;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	cursor: pointer;
+	width: 50px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--clr-slider-arrows);
+	opacity: 1;
+	transition: opacity 0.4s linear;
+
+	@include desktop {
+		bottom: 434px;
+		width: 24px;
+		background-size: 5px 10px;
+	}
+}
+
+.swiper__switch-btn:hover {
+	opacity: 0.6;
+}

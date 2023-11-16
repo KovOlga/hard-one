@@ -1,0 +1,17 @@
+.intro__bike-fix {
+	box-sizing: border-box;
+	position: sticky;
+	top: 347px;
+	height: 300px;
+	width: 440px;
+	background: #f4f4f4;
+	filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
+	border-radius: 20px;
+	padding: 20px 50px;
+
+	@include desktop {
+		width: 234px;
+		height: 160px;
+		padding: 11px 27px;
+	}
+}

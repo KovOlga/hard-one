@@ -1,0 +1,16 @@
+.slider-types__pulse-container {
+	width: 100px;
+	position: absolute;
+	z-index: 200;
+	background-image: url("../images/green-decoration.svg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	bottom: 16px;
+	left: 0;
+
+	@include desktop {
+		width: 70px;
+		bottom: 14px;
+	}
+}
